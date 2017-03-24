@@ -1,8 +1,8 @@
 # Site settings
-title: Hanson
+title: Tingyuan Luan
 header-img: "img/facebook.jpg"
 tagline: "cn"  
-description: "Hanson|Think Different"  
+description: "tyLuan|Make it Different"  
 baseurl: ""
 url: "http://tyluan.github.io"  
 
@@ -27,7 +27,7 @@ zhihu_username: 栾媛媛
 # use Github Flavored Markdown !important  
 # document: http://jekyllrb.com/docs/configuration/#kramdown  
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 paginate: 8
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -49,12 +49,11 @@ defaults:
 
 # Comments 
 comments :
-  provider : duoshuo
+  provider : tyluan
   duoshuo :
-    short_name : hanson
+    short_name : tyluan
   disqus :
-      short_name : hanson
-
+      short_name : tyluan
 # Analytics and webmaster tools stuff goes here
 google_analytics: 
 google_verify:
