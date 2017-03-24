@@ -1,41 +1,69 @@
----
-layout: page
-description: "Hanson's World"
----
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:150 }}
-        </div>
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
+<strong>出生年月：</strong>1991年12月
 
-<hr>
-{% endfor %}
+<strong>籍</strong><strong>   </strong><strong>贯：</strong>山东
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
+<strong>邮</strong><strong>   </strong><strong>箱：</strong>luantingyuan@126.com
+
+<strong>求职方向：</strong>后台/数据/java开发
+<h1>教育背景</h1>
+<ul>
+	<li>09-2017.03     <strong>北京邮电大学</strong><strong>(211)     </strong><strong>信息安全</strong>       工学硕士     专业排名前15%</li>
+	<li>09-2014.06     <strong>北京邮电大学</strong><strong>(211)</strong>   <strong>信息安全</strong>               工学学士     专业排名前10%</li>
+	<li><strong>研究方向：分布式任务调度及负载均衡</strong></li>
 </ul>
-{% endif %}
+<h1>专业技能</h1>
+<ul>
+	<li>熟练使用Java开发语言，熟悉常用设计模式、数据结构及算法，熟悉面向对象模型；</li>
+	<li>熟练使用Mysql、MongoDB数据库，正在学习Redis，有大数据量下数据库设计和性能调优经验；</li>
+	<li>熟悉分布式环境高并发项目开发及运维，研究方向主要为分布式任务调度及负载均衡；</li>
+	<li>熟练使用ActiveMQ、Gearman、Thrift、MyBatis等开源框架；熟练使用Maven、SVN等工具。</li>
+	<li>熟练使用Python语言，两年开发经验（网站爬虫，应用下载，基于VirusTotal的病毒检测等）；</li>
+	<li>了解Linux shell脚本语言，熟悉常用的Linux 命令，有Linux环境搭建及项目开发运维经验；</li>
+	<li>了解Android应用开发(Android手机安全卫士和Android应用权限安全检测 两个应用程序)；</li>
+	<li>了解PHP开发(基于Ectouch的手机端网上商城的二次开发，调整页面及流程，参考页面：http://mall.amoluo.com/amoluo/mobile/)；</li>
+</ul>
+<h1>项目经历</h1>
+<h2>2013.09-2015.08         智能电视安全检测子系统(中国科学院信息工程研究所)       项目负责人</h2>
+<ul>
+	<li><strong>项目简介</strong>：智能电视安全检测子系统提供智能电视终端应用软件的恶意行为检测及分类功能；提供第三方分析引擎接口。向前端提供检测引擎监控信息，接收用户通过前端提交的单次、批量检测任务并执行。对检测结果进行研判，最终提供安全认证服务。</li>
+	<li><strong>相关技术</strong>：Linux Shell、Thrift、ActiveMQ、MyBatis、MySQL、Log4j、JUnit、KVM</li>
+	<li><strong>个人工作</strong>：协调各小组之间的工作负责移动应用检测平台到智能电视应用检测系统的移植及优化；前端到检测平台中间层的业务逻辑实现；通用第三方分析引擎接入功能的实现；调度平台日志审计、失败任务回滚、检测引擎实时监控、检测引擎远程启停、远程修改平台配置等功能的实现；调度平台相关文档的编写。</li>
+</ul>
+<h2>2014.06至今 自有业务恶意软件类违规情况监测服务项目(中国移动信息安全中心)   核心开发人员</h2>
+<ul>
+	<li><strong>项目简介</strong>：项目增量采集中国移动9大业务基地所提供的移动应用软件，自动化下发应用样本检测任务并进行恶意行为样本及不良信息样本研判。实现并搭建移动应用自动化采集、监测平台，维护采集数据及监测数据，定期生成监测报告。</li>
+	<li><strong>相关技术</strong>：Linux Shell、ActiveMQ、MyBatis、MySQL、MongoDB、VirusTotal、Quartz</li>
+	<li><strong>个人工作</strong>：移动应用监测系统自动化调度平台的搭建维护与定制开发；基于VirusTotal的病毒检测引擎的开发与实现；病毒检测引擎相关文档的编写；自动化任务下发客户端的开发与实现；自动化下载工具的开发与实现；用户应用提交接口的开发与实现；应用样本信息解析及分类入库，百万级数据维护。</li>
+</ul>
+<h2>2015.09至2016.2  Android应用加固平台项目(卓望信息技术（北京）有限公司)    核心开发人员</h2>
+<ul>
+	<li><strong>项目简介</strong>：移动应用加固平台主要对用户提交的安卓应用提供加固服务，通过加壳、加密、逻辑混淆、代码隐藏等各类应用加固方法，防止应用被逆向分析、反编译以及二次打包嵌入各类病毒广告等恶意代码，平台按业务流程可以分为脚本加固及人工加固两部分。</li>
+	<li><strong>相关技术</strong>：Linux shell、Thrift、MyBatis、MySQL、MongoDB</li>
+	<li><strong>个人工作</strong>：加固任务调度平台的搭建维护和定制开发；检测状态实时更新、人工加固功能的实现；人工加固结果回收客户端的实现。</li>
+</ul>
+<h2>2015.12至今        Web信息普查与风险感知系统(中国信息通信研究院)        核心开发人员</h2>
+<ul>
+	<li><strong>项目简介</strong>：增量收集目标网站的内容，识别其中的web组件，信息入库并进行信息资产普查汇总，对比漏洞规则库提供风险感知服务，提供修复建议，通过渗透测试对已知漏洞进行风险认证。</li>
+	<li><strong>相关技术</strong>：Gearman、Log4j、Quartz、MongoDB</li>
+	<li><strong>个人工作</strong>：基于Gearman的网站漏洞扫描平台的开发和搭建；对指定网站可调用工具提供风险感知服务；大量第三方漏洞扫描工具的接入，如Xscan、Netsparker等；项目技术解决方案的编写。</li>
+</ul>
+<h1>资格认证及科研成果</h1>
+<ul>
+	<li>软件设计师-计算机技术及软件专业技术资格（水平）证书：掌握软件工程流程及从业基本技能；</li>
+	<li>个人理财-银行从业资格证书：对金融的基础知识有较好的理解认识，对个人理财业务熟练掌握；</li>
+	<li>大学英语六级(500): 较好的英文阅读及翻译能力，可撰写一般性技术文档，口语表达流利；</li>
+	<li>6<sup>th</sup> IEEE ICIST大会录用论文一篇《A distributed task scheduling strategy for massive mobile application security detection》。</li>
+</ul>
+<h1>学生活动及获奖经历</h1>
+<ul>
+	<li>2010-2011 担任计算机学院分团委、学生会秘书处副部长；并获得“优秀部长”荣誉称号；</li>
+	<li>2010-2014 连续四年担任班级团支书，组织多次团体建设活动，获得同学们的一致认可；</li>
+	<li>2010-2014 连续四年获得国家励志奖学金(3%)；连续四年获得亿阳奖学金(16/3000)；</li>
+	<li>2011-2013 先后获得“优秀班干部”荣誉称号(5%)一次，“三好学生”荣誉称号(10%)两次;</li>
+	<li>12   获得全国大学生电子商务“创新、创意及创业”挑战赛北京赛区三等奖；</li>
+	<li>06   获得北京邮电大学2014届优秀学士学位论文奖（Android恶意行为静态分析工具）。</li>
+	<li>2014-2015 连续两年获得北京邮电大学研究生一等奖学金；</li>
+</ul>
+<h1>个人评价</h1>
+项目开发经验较多，编码思维严谨，行思结合，追求代码优雅，关注执行效率，崇尚敏捷开发，热衷于Bug-free。工作认真负责，逻辑思维能力强，学习能力强，坚持不断更新大脑知识库。抗压能力强，愿意迎难而上。有较好的团队协作能力和组织协调能力，组织活动玩得开。喜欢读书写字养花养草，也喜欢走走逛逛体验人生。
